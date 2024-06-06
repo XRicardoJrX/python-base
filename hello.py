@@ -19,16 +19,15 @@ __version__="0.0.1"
 __author__="Ricardo Jr"
 __license__="Unlicense"
 
-
 import os
 
 current_language = os.getenv("LANG")[:5]
 msg = "Hello, Wordl!"
 
 
-if current_language == "pt_BR.":
-    msg= "Olá, Mundo!"
+if current_language == "pt_BR":
+    msg= "Ola, Mundo!"
 elif current_language == "it_IT":
-    msg ="Ciao, Mondo"
+    msg = "Ciao, Mondo"
 
 print (msg)
